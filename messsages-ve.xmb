@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="676043619419807060"><source>src/app/app.component.html:1,4</source><source>src/app/app.component.html:5,8</source>
+  <ph name="START_TAG_ICON"><ex>&lt;icon&gt;</ex>&lt;icon&gt;</ph><ph name="CLOSE_TAG_ICON"><ex>&lt;/icon&gt;</ex>&lt;/icon&gt;</ph>
+  Edit <ph name="NUMBER"><ex>{{ 1 + 1 // i18n(ph=&quot;number&quot;) }}</ex>{{ 1 + 1 // i18n(ph=&quot;number&quot;) }}</ph>
+</msg>
+</messagebundle>

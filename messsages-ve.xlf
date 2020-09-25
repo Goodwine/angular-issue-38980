@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4adbdc3b559031ffbd4b85be3525105d1a19c6c2" datatype="html">
+        <source>
+  <x id="START_TAG_ICON" ctype="x-icon" equiv-text="&lt;icon&gt;"/><x id="CLOSE_TAG_ICON" ctype="x-icon" equiv-text="&lt;/icon&gt;"/>
+  Edit <x id="NUMBER" equiv-text="{{ 1 + 1 // i18n(ph=&quot;number&quot;) }}"/>
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

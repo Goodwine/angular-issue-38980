@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
+  <file id="ngi18n" original="ng.template">
+    <unit id="4151377191082329598">
+      <notes>
+        <note category="location">src/app/app.component.html:2,4</note>
+      </notes>
+      <segment>
+        <source><pc id="0" equivStart="START_TAG_ICON" equivEnd="CLOSE_TAG_ICON" dispStart="&lt;icon value=&quot;notebook&quot;&gt;&lt;/icon&gt;" dispEnd="&lt;/icon&gt;
+  "></pc> Edit <ph id="1" equiv="NUMBER" disp="{ 1 + 1 // i18n(ph=&quot;number&quot;) }}
+"/>
+</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>

@@ -1,27 +1,25 @@
 # Issue38980
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.0-next.0.
+This is a playground to test out the issue at https://github.com/angular/angular/issues/38980
 
-## Development server
+There are two buttons in AppComponent marked for i18n translation.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```html
+<button i18n>
+  <icon value="notebook"></icon>
+  Edit {{ 1 + 1 // i18n(ph="number") }}
+</button>
+<button i18n>
+  <icon value="pencil"></icon>
+  Edit {{ 1 + 1 // i18n(ph="number") }}
+</button>
+```
 
-## Code scaffolding
+The CLI has been configured to generate 9 different translation file outputs:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1) ivy: off + xlf / xlf2 / xmb
+2) ivy: on + xlf / xlf2 / xmb
+3) ivy: on + legacy message ids disabled + xlf / xlf2 / xmb
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+According to this issue you would expect to see two different messages extracted in the translation file.
+But there appears to be only one.

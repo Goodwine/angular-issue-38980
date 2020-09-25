@@ -29,6 +29,9 @@
             "scripts": []
           },
           "configurations": {
+            "no-legacy-messages": {
+              "tsConfig": "tsconfig.app-no-legacy.json"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -73,6 +76,56 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "issue38980:build"
+          },
+          "configurations": {
+            "xlf-ve": {
+              "format": "xlf",
+              "outFile": "messsages-ve.xlf",
+              "ivy": false
+            },
+            "xmb-ve": {
+              "format": "xmb",
+              "outFile": "messsages-ve.xmb",
+              "ivy": false
+            },
+            "xlf2-ve": {
+              "format": "xlf2",
+              "outFile": "messsages-ve.xlf2",
+              "ivy": false
+            },
+            "xlf-ivy": {
+              "format": "xlf",
+              "outFile": "messsages-ivy.xlf",
+              "ivy": true
+            },
+            "xmb-ivy": {
+              "format": "xmb",
+              "outFile": "messsages-ivy.xmb",
+              "ivy": true
+            },
+            "xlf2-ivy": {
+              "format": "xlf2",
+              "outFile": "messsages-ivy.xlf2",
+              "ivy": true
+            },
+            "xlf-no-legacy": {
+              "browserTarget": "issue38980:build:no-legacy-messages",
+              "format": "xlf",
+              "outFile": "messsages-ivy-no-legacy.xlf",
+              "ivy": true
+            },
+            "xmb-no-legacy": {
+              "browserTarget": "issue38980:build:no-legacy-messages",
+              "format": "xmb",
+              "outFile": "messsages-ivy-no-legacy.xmb",
+              "ivy": true
+            },
+            "xlf2-no-legacy": {
+              "browserTarget": "issue38980:build:no-legacy-messages",
+              "format": "xlf2",
+              "outFile": "messsages-ivy-no-legacy.xlf2",
+              "ivy": true
+            }
           }
         },
         "test": {
@@ -118,6 +171,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "issue38980"
 }
